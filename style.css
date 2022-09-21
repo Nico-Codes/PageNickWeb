@@ -11,7 +11,7 @@ body{
 }
 .hero{
     background: linear-gradient(90deg, #00d2ff 0%, #3a47d5 100%);
-    
+    width: 100%;
 }
 .hero__header{
 display: flex;
@@ -51,6 +51,7 @@ letter-spacing: 2px;
     padding-inline: 6rem;
     padding-bottom: 2rem;
     padding-top: 2rem;
+    width: 90%;
 }
 .hero__main > div {
     flex: 1;
@@ -118,6 +119,8 @@ padding-left: 3rem;
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: 4fr;
+    width: 85%;
+    margin: auto;
 }
     .grid__item{
         display: flex;
@@ -141,7 +144,7 @@ padding-left: 3rem;
         letter-spacing: .1rem;
         color: rgb(255, 255, 255);
         text-shadow: 5px 2px 3px rgb(0, 0, 0);
-        font-size: 50px;
+        font-size: 3rem;
 
     }
     .grid__item .text p{
@@ -149,7 +152,7 @@ padding-left: 3rem;
         
         color: rgb(255, 255, 255);
         text-shadow: 2px 2px 4px rgb(0, 0, 0);
-        font-size: 25px;
+        font-size: 1.7rem;
 
     }
     .grid__item .text__sobremi{
@@ -163,12 +166,12 @@ padding-left: 3rem;
         padding: 10px;
         letter-spacing: .1rem;
         color: rgb(0, 0, 0);
-        font-size: 50px;
+        font-size: 3rem;
     }
     .grid__item .text__sobremi p{
         color: rgb(0, 0, 0);
         text-shadow: 2px 2px 4px rgb(0, 0, 0);
-        font-size: 25px;
+        font-size: 1.7rem;
 
     }
   
@@ -195,7 +198,7 @@ padding-left: 3rem;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    padding: 15px;
+    padding: 1rem;
     text-align: center;
     background-color: rgb(134, 134, 255);
     
@@ -209,8 +212,8 @@ padding-left: 3rem;
    
 }
 .footer__item .ul li{
-    padding-left: 15px;
-    padding-right: 15px; 
+    padding-left: 1rem;
+    padding-right: 1rem; 
 }
 
 
@@ -286,7 +289,7 @@ padding-left: 3rem;
     justify-content: center;
     margin-left:50px;
     background-color: #3e6ece;
-    border-radius: 20px;
+    border-radius: 1.3rem;
     box-shadow: 4px 4px 5px black;
     width: 400px;
     height: 600px;
@@ -309,8 +312,8 @@ padding-left: 3rem;
     text-align: center;
     align-items: center;
     background-color: #6a11cb;
-    font-size: 20px;
-    border-radius: 20px;
+    font-size: 1.3rem;
+    border-radius: 1.3rem;
    
 
 }
@@ -322,28 +325,33 @@ padding-left: 3rem;
 @media screen and (max-width: 480px) {
      
     
-    .hero__main{
+     .hero__main{
         display: flex;
-        flex-direction: column;
+        flex-direction: column-reverse;
         justify-content: center;
         text-align: center;
         align-items: center;
-        width: 100%;
+        width: 90%;
         height: 100%;
         padding: 0;
         padding-bottom: 70px;
-    }
-    .hero__header{
+        margin: auto;
+     }
+     .hero__header{
         padding: 0;
         padding-top: 15px;
-        padding-bottom: 80px;
-       
-       
+        padding-bottom: 10px;
         margin: 0;
-       
-       
-    }
-    .hero__header img{
+     }
+     .hero__header .navbar-brand img{
+        margin: auto;
+        margin-left: 1.5rem;
+     }
+     .hero__header .container-fluid{
+        margin: 0;
+        margin-right:10px ;
+     }
+     .hero__header img{
         margin: 0;
         margin-left: 20px;
         margin-bottom: 70px;
@@ -351,81 +359,117 @@ padding-left: 3rem;
 
       
       
-    }
-    .header__right{
+     }
+     .header__right{
         justify-content: flex-start;
         padding-top: 15px;
-    }
-    .header__right .menu{
+     }
+     .header__right .menu{
         
       gap:1rem;
       
-    }
-    .menu__item a{
-        font-size: 10px;
-    }
-    .hero__text{
+     }
+     .menu__item a{
+        font-size: 0.7rem;
+     }
+     .hero__text{
 
         margin: 0;
         padding: 0;
         padding-bottom: 10px;
         width: 100vh;
         justify-content: center;
-    }
-    .hero__text h4{
+     }
+     .hero__text h4{
 
         justify-content: center;
         align-items: center;
-        font-size: 30px;
+        font-size: 1.9rem;
         text-shadow: 1px 2px 1px white;
         margin: auto;
        
-    }
-    .hero__text p{
+     }
+     .hero__text p{
         margin: auto;
         text-align: center; 
-    }
-    .hero_img img{
+     }
+     .hero_img img{
         padding-top: 20px;
         width: 370px;
-    }
-    .grid{
+     }
+     .grid{
         display: flex;
         flex-direction: column;
-        margin: 0;
+        margin: auto;
         padding: 0;
+        gap: 1rem;
+        
      }
      .grid__item{
         justify-content: center;
         align-items: center;
-        width: 460px;
+        gap: 0.1rem;
         display: flex;
-        flex-direction: row;
-        height: 300px;
-        width: 480;
-        margin: 10px;
+        flex-direction: column;
+        height: auto;
+        width: 100%;
+       margin: 0;
+        margin-bottom: 15px;
+        margin-top: 15px;
+        
      }
      .grid__item img{
-     width: 180px;
-     padding-left: 10px;
-     padding-right: 10px;
+        
+        width: 60%;
+        padding:0;
      }
      .grid__item .text h5{
-        font-size: 30px;
+        font-size: 2rem;
+        margin: 0;
+        
               
      }
+     .grid__item .text{
+        height: 50%;
+        margin: 0;
+        padding: 0;
+     }
      .grid__item .text p{
-        font-size: 17px;
+        font-size: 1rem;
       
      }
      .footer{
         padding-top: 10px;
      }
-     .footer__item {
+     .footer__item .text{
+        
+        width: 55%;
+     }
+     .footer__item .text h4{
+        font-size: 1rem;
+        
 
+
+        
+     }
+     .footer__item {
+        
+        
         padding: 0;
         padding-top: 10px;
         padding-bottom: 10px;
+        
+     }
+     
+     
+     .footer__item .links ul{
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 0;
+        align-items: center;
+        margin: auto;
+        padding-right: 1rem;
+        
      }
      .footer__item .ul li{
         padding: 0;
@@ -437,12 +481,13 @@ padding-left: 3rem;
        width: 400px;
      }
      .grid__item .text__sobremi h5{
-        font-size: 30px;
+        font-size: 2rem;
 
      }
      .grid__item .text__sobremi p{
-        font-size: 15px; }
-    .hero__main__sobremi{
+        font-size: 1rem; 
+     }
+     .hero__main__sobremi{
        padding-bottom: 50px;
        }
        .hero__main__portfolio{
