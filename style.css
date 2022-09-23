@@ -2,7 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    color: rgb(0, 0, 0);
+   
 }
 
 body{
@@ -22,8 +22,18 @@ padding: 2rem;
 }
 .hero__header img{
     box-sizing: border-box;
+    transition-property: all;
+    transition-duration: 1s;
+    transition-timing-function: 1s;
     width: 70px;
     margin-left: 60px;
+
+}
+.navbar-brand img:hover{
+    transition-property: all;
+    transition-duration: 1s;
+    transition-timing-function: 1s;
+    width: 90px;
 
 }
 .header__right{
@@ -52,64 +62,113 @@ letter-spacing: 2px;
     padding-bottom: 2rem;
     padding-top: 2rem;
     width: 90%;
+   margin: auto;
 }
-.hero__main > div {
-    flex: 1;
+.hero__main__portfolio{
+    display: flex;
+    flex-direction: column;
 }
 .hero__text{
 display: flex;
 flex-direction: column;
 justify-content: center;
-
+width: 70%;
 padding-left: 3rem;
+
 }
 .hero__main__portfolio{
-  
-    width: 1000px;
-    height: 400px;
+    
+    
+    width: 100%;
+    height: 500px;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     margin: auto;
-    background-color: #2575fc;
     
-}
-.hero__main__portfolio{
-   margin-top: 50px;
-   border-radius: 20px;
- 
-}
+     }
+
 .hero__main__sobremi{
     display: flex;
     justify-content: center;
     align-items: center;
     padding-bottom: 30px;
+} 
+
+.hero__text__portfolio{
+    width: max-content;
+    background-color: white;
+    border: solid 3px rgb(249, 117, 75);
+    border-radius: 30px
+}
+.hero__main__portfolio .hero__text p{
+    margin:auto;
+}
+.hero__main__portfolio .hero__img{
+    margin: auto;
+    padding: 0;
+}
+
+.hero__text__portfolio h4{
+    width: 100%;
+    font-size: 3rem;
+    color: rgb(22, 12, 133);
+    padding-left: 1rem;
+    padding-right: 1rem;
+    
+}
+.hero__text{
+display: flex;
+flex-direction: column;
+justify-content: center;
+width: 70%;
+padding-left: 3rem;
+
 }
 .hero__text h4 {
-    font-weight: 800;
+    display: flex;
     font-size: 4rem;
-    width: max-content;
+   flex-wrap: wrap;
   padding-bottom: 1rem;
   text-shadow: 3px 3px 0 rgb(255, 255, 255);
+  margin: auto;
+  padding-right: 20px;
+  justify-content: flex-start;
+  text-align: center;
+  
    
 }
 .hero__text p{
     font-weight: 1000;
     font-size: 1.7rem;
-    border: 2px solid black;
+    border: 2px solid rgb(0, 0, 0);
+    border-radius: 10px;
     width: max-content;
-    box-shadow: 3px 3px 5px black;
-  
+    transition-property: all;
+    transition-duration: 0.7s;
+    box-shadow: 1px 1px 2px rgb(0, 0, 0);
+    
+}
+.hero__text p:hover{
+    transition-property: all;
+    transition-duration: 0.7s;
+    box-shadow: 3px 3px 5px rgb(0, 0, 0);
+ 
+    
 }
 .hero__text p a {
     text-decoration: none;
+    padding: 5px;
 }
 .hero__img{
     display: flex;
     justify-content: center;
+    margin: auto;
     align-items: center;
     padding-block: 3rem;
-    box-sizing: border-box;
+    padding: 0;
+   
     
     
 }
@@ -121,6 +180,7 @@ padding-left: 3rem;
     grid-template-rows: 4fr;
     width: 85%;
     margin: auto;
+    background-image: url();
 }
     .grid__item{
         display: flex;
@@ -128,11 +188,15 @@ padding-left: 3rem;
         margin: 30px;
         border-radius: 10px;
        
+       
+        
+       
     }
     .grid__item img{
         border-radius: 30px;
     }
     .grid__item .text {
+        margin: auto;
      display: flex;
      flex-direction: column;
      text-align: center;
@@ -182,17 +246,26 @@ padding-left: 3rem;
     
 
 .grid__item1 {
-    background: linear-gradient(90deg, #4b6cb7 0%, #182848 100%);
+    background-color: rgb(26, 148, 236);
+    box-shadow:0px 0px 15px black;
+
 
 }
+.grid__item1 img{
+    width: 50%;
+    
+}
 .grid__item2 {
-  background: linear-gradient(90deg, #4b6cb7 0%, #182848 100%);
+    background-color: rgb(26, 148, 236);
+    box-shadow:0px 0px 15px black;
 }
 .grid__item3 {
-   background: linear-gradient(90deg, #4b6cb7 0%, #182848 100%);
+    background-color: rgb(26, 148, 236);
+    box-shadow:0px 0px 15px black;
 }
 .grid__item4 {
-   background: linear-gradient(90deg, #4b6cb7 0%, #182848 100%);
+    background-color: rgb(26, 148, 236);
+    box-shadow:0px 0px 15px black;
 }
 .footer__item{
     display: flex;
@@ -204,18 +277,37 @@ padding-left: 3rem;
     
 
 }
-
-.footer__item ul{
+.li__links{
+    
+    margin: auto;
+    padding: auto;
+}
+.footer__item .ul{
+   width: 500px;
+    height: 100px;
     display: flex;
     flex-direction: row;
     list-style: none;
+    margin: auto;
+    
+   
+    
    
 }
 .footer__item .ul li{
     padding-left: 1rem;
     padding-right: 1rem; 
 }
-
+.li__links img{
+   transition: all;
+   transition-duration: 1s;
+    width: 48px;
+}
+.li__links img:hover{
+    transition: all;
+   transition-duration: 1s;
+    width: 64px;
+}
 
 .footer__item .text h4 {
    display: flex;
@@ -231,6 +323,7 @@ padding-left: 3rem;
     display: flex;
     justify-content: center;
     text-align: center;
+    align-items: center;
 }
 .flex__servicios{
     display: flex;
@@ -238,20 +331,50 @@ padding-left: 3rem;
     justify-content: center;
     align-items: center;
     align-content: center;
+    gap: 2rem;
+    width: 80%;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    text-align: center;
+    margin: auto;
+   
+
+}
+.flex__servicios .div__servicio{
+    width: 30%;
     height: 500px;
-    width: 100%;
+    background-color: blue;
+    border-radius: 30px;
+    transition: all;
+    transition-duration: 1s;
+    box-shadow: 2px 2px 8px black;
+    
+
 
 }
+.flex__servicios .div__servicio:hover{
+    transition: all;
+    transition-duration: 1s;
+    width: 40%;
+    height: 600px;
+    box-shadow: 4px 4px 15px black;
+    border: 3px solid rgb(24, 2, 104);
 
-.servicios__table tr th{
-    border-bottom: solid 3px black;
 }
-.servicios__table .th__medio{
-    border-right: solid 1px black;
-    border-left: solid 1px black;
+.flex__servicios .div__servicio {
+    color: white;
 }
-.servicios__table .th__abajo{
-    border-bottom: none;
+.div__servicio .servicio__text{
+    padding: 2rem;
+}
+.div__servicio .servicio__text h5{
+    margin: auto;
+   margin-top: 10px;
+   margin-bottom: 10px;
+ background-color: white;
+ color: #6a11cb;
+ width: 30%;
+ border-radius: 20px;
 }
 .flex__programas{
     display: flex;
@@ -273,15 +396,24 @@ padding-left: 3rem;
     align-items: center;
     padding: 60px;
     width:100%;
+    margin: auto;
 }
 .flex__contacto .contacto__atajos{
+    
     display: flex;
     flex-direction: column;
-    
     justify-content: center;
     text-align: center;
+    margin: auto;
+    align-items: center;
+   
    
 }
+.flex__contacto .contacto__atajos a{
+    width: 60px;
+}
+
+
 .flex__contacto .contacto__formulario{
     display: flex;
     flex-direction: column;
@@ -292,7 +424,8 @@ padding-left: 3rem;
     border-radius: 1.3rem;
     box-shadow: 4px 4px 5px black;
     width: 400px;
-    height: 600px;
+    height: auto;
+    padding: 30px;
 
   
 }
@@ -336,6 +469,7 @@ padding-left: 3rem;
         padding: 0;
         padding-bottom: 70px;
         margin: auto;
+        padding-top: 30px;
      }
      .hero__header{
         padding: 0;
@@ -377,14 +511,14 @@ padding-left: 3rem;
         margin: 0;
         padding: 0;
         padding-bottom: 10px;
-        width: 100vh;
+        width: 90vh;
         justify-content: center;
      }
      .hero__text h4{
-
+        width: 90%;
         justify-content: center;
         align-items: center;
-        font-size: 1.9rem;
+        font-size: 2.5rem;
         text-shadow: 1px 2px 1px white;
         margin: auto;
        
@@ -460,7 +594,9 @@ padding-left: 3rem;
         padding-bottom: 10px;
         
      }
-     
+     .footer__item .links{
+        width: 70%;
+     }
      
      .footer__item .links ul{
         justify-content: center;
@@ -471,6 +607,10 @@ padding-left: 3rem;
         padding-right: 1rem;
         
      }
+     .li__links img:hover{
+        transition: none;
+       width: 48px; 
+    }
      .footer__item .ul li{
         padding: 0;
         padding-left: 5px;
@@ -496,4 +636,20 @@ padding-left: 3rem;
         object-fit: fill;
         background-color: #00d2ff;
        }
-      }
+       .flex__servicios{
+        display: flex;
+        flex-direction: column;
+        
+        
+       }
+       .flex__servicios .div__servicio{
+        width: 100%;
+        height: 100%;
+        animation: none;
+       }
+       .flex__servicios .div__servicio:hover{
+        width: 100%;
+        height: 100%;
+        animation: none;
+       }
+    }
