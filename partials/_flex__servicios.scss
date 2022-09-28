@@ -1,0 +1,43 @@
+.flex__servicios{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    gap: 2rem;
+    width: 80%;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    text-align: center;
+    margin: auto;
+
+    .div__servicio{
+        width: 30%;
+        height: 500px;
+        background-color: blue;
+        border-radius: 30px;
+        transition: all;
+        transition-duration: 1s;
+        box-shadow: 2px 2px 8px black;
+        color: white;
+        &:hover{
+            transition: all;
+            transition-duration: 1s;
+            width: 40%;
+            height: 600px;
+            box-shadow: 4px 4px 15px black;
+            border: 3px solid rgb(24, 2, 104);
+        }
+        .servicio__text{
+            h5{
+                margin: auto;
+                margin-top: 10px;
+                margin-bottom: 10px;
+                background-color: white;
+                color: #6a11cb;
+                width: 30%;
+                border-radius: 20px;
+            }
+        }
+    }
+}

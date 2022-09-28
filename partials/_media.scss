@@ -1,0 +1,177 @@
+@media screen and (max-width: 480px)
+{
+    .hero{
+        .hero__header{
+            padding: 0;
+            padding-top: 15px;
+            padding-bottom: 10px;
+            margin: 0;
+            .navbar-brand{
+                img{
+                    margin: auto;
+                    margin-left: 1.5rem;
+                }
+            }
+            .container-fluid{
+                margin: 0;
+                margin-right:10px ;
+            }
+            img{
+                margin: 0;
+                margin-left: 20px;
+                margin-bottom: 70px;
+            }
+        }
+        .hero__main{
+            display: flex;
+            flex-direction: column-reverse;
+            justify-content: center;
+            text-align: center;
+            align-items: center;
+            width: 90%;
+            height: 100%;
+            padding: 0;
+            padding-bottom: 70px;
+            margin: auto;
+            padding-top: 30px;
+            .hero__text{
+                margin: 0;
+                padding: 0;
+                padding-bottom: 10px;
+                width: 90vh;
+                justify-content: center; 
+                h4{
+                    width: 90%;
+                    justify-content: center;
+                    align-items: center;
+                    font-size: 2.5rem;
+                    text-shadow: 1px 2px 1px white;
+                    margin: auto;  
+                }
+                p{
+                    margin: auto;
+                    text-align: center; 
+                }
+            }
+            .hero__img{
+                img{
+                    padding-top: 20px;
+                    width: 370px;
+                }
+            }
+        }
+        .hero__main__sobremi{
+            padding-bottom: 3.1rem;
+        }
+        .hero__main__portfolio{
+            width: 90%;
+            margin: 20px;
+            object-fit: fill;
+            background-color:$backgroundColor;
+        }
+    }
+    .grid{
+        display: flex;
+        flex-direction: column;
+        margin: auto;
+        padding: 0;
+        gap: 1rem;
+        .grid_item{
+           
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 0.1rem;
+            height: auto;
+            width: 100%;
+            margin: 0;
+            margin-bottom: 15px;
+            margin-top: 15px;
+            img{
+                width: 60%;
+                padding:0;
+                justify-content: center;
+                margin: auto;
+            }
+            .text{
+                height: 50%;
+                margin: 0;
+                padding: 0;
+                p{
+                    font-size: 1rem;
+                }
+                h5{
+                    font-size: 2rem;
+                    margin: 0;
+                }
+            }
+            .text__sobremi{
+                h5{
+                    font-size: 2rem;
+                }
+                p{
+                    font-size: 1rem;
+                }
+            }
+        }
+    }
+    .footer{
+        padding-top: 10px;
+        .footer__item{
+            padding: 0;
+            padding-top: 10px;
+            padding-bottom: 10px;
+
+            .text{
+                width: 55%;
+                h4{
+                    font-size: 1rem;
+                }
+            }
+            .links{
+                width: 70%;
+
+                ul{
+                    justify-content: center;
+                    flex-wrap: wrap;
+                    gap: 0;
+                    align-items: center;
+                    margin: auto;
+                    padding-right: 1rem;
+                    li{
+                        padding: 0;
+                        padding-left: 5px;
+                        padding-right: 5px;
+                        img{
+                            &:hover{
+                                 transition: none;
+                                  width: 48px; 
+                            }
+
+                        }
+                    }
+                }
+            }
+            
+        }
+    }
+    .flex__servicios{
+        display: flex;
+        flex-direction: column;
+        
+        .div__servicio{
+            width: 100%;
+            height: 100%;
+            animation: none;
+            &:hover{
+                width: 100%;
+               height: 100%;
+             animation: none;
+            }
+        }
+        .servicios__table{
+            width: 400px;
+        }
+    }
+}
