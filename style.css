@@ -20,6 +20,9 @@ body {
   flex-direction: row;
   justify-content: space-between;
   padding: 2rem;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
 }
 .hero .hero__header img {
   box-sizing: border-box;
