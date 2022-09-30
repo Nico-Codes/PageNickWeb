@@ -1,14 +1,34 @@
 .section__contacto{
     .flex__programas{
+        
         display: flex;
         flex-direction: row;
-        justify-content: space-around;
+        justify-content: center;
         align-items: center;
         background-color: white;
         height: 60px;
-
+        width: max-content;
+        border-radius: 30px;
+        padding: 2rem;
+        margin: auto;
+        margin-top: 1rem;
+        
+        box-shadow: 1px 1px 15px black;
         img{
             width: 40px;
+        }
+        .programas__img{
+            display: flex;
+            justify-content: space-between;
+            gap: 3rem;
+            
+        }
+        .programas__text{
+            margin-right: 4rem;
+            h5{
+                
+                margin: auto;
+            }
         }
     }
     .flex__contacto{
@@ -37,7 +57,7 @@
                 align-items: center;
                 justify-content: center;
                 margin-left:50px;
-                background:$degradadoColor;
+                background: $degradadoColor;
                 border-radius: 1.3rem;
                 box-shadow: 4px 4px 5px black;
                 width: 400px;
@@ -53,20 +73,7 @@
                 }
 
             }
-            .texto__medio{
-                margin: auto;
-                display: flex;
-                width: 90%;
-                height: 60px;
-                justify-content: center;
-                text-align: center;
-                align-items: center;
-                background-color: #6a11cb;
-                font-size: 1.3rem;
-                border-radius: 1.3rem;
-                h5{
-                    color: white;
-                }
-            }
+            
+            
     }
 }
