@@ -19,9 +19,22 @@
         }
         .programas__img{
             display: flex;
+            flex-direction: row;
             justify-content: space-between;
             gap: 3rem;
-            
+
+            ul{
+                display: flex;
+                flex-direction: row;
+                margin: auto; 
+                padding: 0;
+                list-style: none;
+               li{
+                    img{
+                        @include tamanos(40px, 40px)
+                    }
+               }
+            }
         }
         .programas__text{
             margin-right: 4rem;
@@ -76,4 +89,8 @@
             
             
     }
+}
+@mixin tamanos($ancho, $alto) {
+    width: $ancho;
+    height: $alto;
 }
