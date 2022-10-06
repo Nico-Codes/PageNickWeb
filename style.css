@@ -167,8 +167,6 @@ body {
   border-radius: 10px;
   background-color: rgb(26, 148, 236);
   box-shadow: 0px 0px 15px black;
-  -webkit-animation: slide-in-left 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
-  animation: slide-in-left 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
 }
 .grid .grid__item img {
   border-radius: 30px;
@@ -204,43 +202,7 @@ body {
   text-shadow: 2px 2px 4px rgb(0, 0, 0);
   font-size: 1.7rem;
 }
-.grid .div1 {
-  -webkit-animation-delay: 1s;
-          animation-delay: 1s;
-}
-.grid .div2 {
-  -webkit-animation-delay: 2s;
-          animation-delay: 2s;
-}
-.grid .div3 {
-  -webkit-animation-delay: 3s;
-          animation-delay: 3s;
-}
-.grid .div4 {
-  -webkit-animation-delay: 4s;
-          animation-delay: 4s;
-}
 
-@-webkit-keyframes slide-in-left {
-  0% {
-    transform: translateX(-1000px);
-    opacity: 0;
-  }
-  100% {
-    transform: translateX(0);
-    opacity: 1;
-  }
-}
-@keyframes slide-in-left {
-  0% {
-    transform: translateX(-1000px);
-    opacity: 0;
-  }
-  100% {
-    transform: translateX(0);
-    opacity: 1;
-  }
-}
 .section__contacto .flex__programas {
   display: flex;
   flex-direction: row;
@@ -396,28 +358,6 @@ body {
   padding-right: 1rem;
   margin: auto;
   padding: auto;
-  -webkit-animation: scale-up-center 0.4s cubic-bezier(0.39, 0.575, 0.565, 1) both;
-  animation: scale-up-center 0.4s cubic-bezier(0.39, 0.575, 0.565, 1) both;
-}
-.section__footer .footer__item .links ul .li__links1 {
-  -webkit-animation-delay: 0.2s;
-          animation-delay: 0.2s;
-}
-.section__footer .footer__item .links ul .li__links2 {
-  -webkit-animation-delay: 0.4s;
-          animation-delay: 0.4s;
-}
-.section__footer .footer__item .links ul .li__links3 {
-  -webkit-animation-delay: 0.6s;
-          animation-delay: 0.6s;
-}
-.section__footer .footer__item .links ul .li__links4 {
-  -webkit-animation-delay: 0.8s;
-          animation-delay: 0.8s;
-}
-.section__footer .footer__item .links ul .li__links5 {
-  -webkit-animation-delay: 1s;
-          animation-delay: 1s;
 }
 .section__footer .footer__item .links ul img {
   transition: all;
@@ -430,22 +370,6 @@ body {
   width: 64px;
 }
 
-@-webkit-keyframes scale-up-center {
-  0% {
-    transform: scale(0.5);
-  }
-  100% {
-    transform: scale(1);
-  }
-}
-@keyframes scale-up-center {
-  0% {
-    transform: scale(0.5);
-  }
-  100% {
-    transform: scale(1);
-  }
-}
 @media screen and (max-width: 480px) {
   body .hero .hero__header {
     padding: 0;

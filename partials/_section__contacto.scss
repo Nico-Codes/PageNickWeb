@@ -12,8 +12,8 @@
         padding: 2rem;
         margin: auto;
         margin-top: 1rem;
-        
         box-shadow: 1px 1px 15px black;
+
         img{
             width: 40px;
         }
@@ -29,11 +29,6 @@
                 margin: auto; 
                 padding: 0;
                 list-style: none;
-               li{
-                    img{
-                        @include tamanos(40px, 40px)
-                    }
-               }
             }
         }
         .programas__text{
