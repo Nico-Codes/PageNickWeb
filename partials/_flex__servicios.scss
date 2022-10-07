@@ -20,6 +20,18 @@
         transition-duration: 1s;
         box-shadow: 2px 2px 8px black;
         color: white;
+        .ul__Servicios{
+            list-style-type: none;
+            margin: auto;
+            justify-content: center;
+            text-align: center;
+            padding: 0;
+            
+            li{
+                padding: 1rem;
+                
+            }
+        }
         &:hover{
             transition: all;
             transition-duration: 1s;
@@ -27,6 +39,7 @@
             height: 600px;
             box-shadow: 4px 4px 15px black;
             border: 3px solid rgb(24, 2, 104);
+            
         }
         .servicio__text{
             h5{
@@ -37,6 +50,9 @@
                 color: #6a11cb;
                 width: 30%;
                 border-radius: 20px;
+            }
+            h4{
+                padding-top: 1rem;
             }
         }
     }

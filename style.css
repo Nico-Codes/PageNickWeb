@@ -190,6 +190,7 @@ body {
   color: rgb(255, 255, 255);
   text-shadow: 2px 2px 4px rgb(0, 0, 0);
   font-size: 1.7rem;
+  text-shadow: none;
 }
 .grid .grid__item .text__sobremi h5 {
   padding: 10px;
@@ -199,7 +200,6 @@ body {
 }
 .grid .grid__item .text__sobremi p {
   color: rgb(0, 0, 0);
-  text-shadow: 2px 2px 4px rgb(0, 0, 0);
   font-size: 1.7rem;
 }
 
@@ -305,6 +305,16 @@ body {
   box-shadow: 2px 2px 8px black;
   color: white;
 }
+.flex__servicios .div__servicio .ul__Servicios {
+  list-style-type: none;
+  margin: auto;
+  justify-content: center;
+  text-align: center;
+  padding: 0;
+}
+.flex__servicios .div__servicio .ul__Servicios li {
+  padding: 1rem;
+}
 .flex__servicios .div__servicio:hover {
   transition: all;
   transition-duration: 1s;
@@ -322,6 +332,9 @@ body {
   width: 30%;
   border-radius: 20px;
 }
+.flex__servicios .div__servicio .servicio__text h4 {
+  padding-top: 1rem;
+}
 
 .section__footer .footer__item {
   display: flex;
@@ -329,7 +342,7 @@ body {
   justify-content: space-between;
   padding: 1rem;
   text-align: center;
-  background-color: rgb(134, 134, 255);
+  background-color: rgb(26, 148, 236);
 }
 .section__footer .footer__item .text h4, .section__footer .footer__item .grid .grid__item .text__sobremi h4, .grid .grid__item .section__footer .footer__item .text__sobremi h4 {
   display: flex;

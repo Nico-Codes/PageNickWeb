@@ -6,6 +6,7 @@
     width: 85%;
     margin: auto;
    
+   
     
     .grid__item{
         display: flex;
@@ -34,12 +35,14 @@
                 color: rgb(255, 255, 255);
                 text-shadow: 5px 2px 3px rgb(0, 0, 0);
                 font-size: 3rem;
+               
 
             }
             p{
                 color: rgb(255, 255, 255);
                 text-shadow: 2px 2px 4px rgb(0, 0, 0);
                 font-size: 1.7rem;
+                text-shadow: none
         
             }
         }
@@ -54,7 +57,7 @@
             }
             p{
                 color: rgb(0, 0, 0);
-                text-shadow: 2px 2px 4px rgb(0, 0, 0);
+                
                 font-size: 1.7rem;
 
             }
