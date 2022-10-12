@@ -1,4 +1,7 @@
 .section__footer{
+    -webkit-box-shadow: 0px -10px 50px -8px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px -10px 50px -8px rgba(0,0,0,0.75);
+    box-shadow: 0px -10px 50px -8px rgba(0,0,0,0.75);
 .footer__item{
     display: flex;
     flex-direction: row;

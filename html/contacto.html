@@ -16,48 +16,53 @@
 </head>
 <body>
     <section class="hero">
+      <div class="div__header">
         <header class="hero__header">
-           
-                <a class="navbar-brand" href="../index.html"><img src="../img/logos/ni logo dorado recorte.png" alt="Logo Nickweb"></a>
-                <nav class="d-flex justify-content-between navbar navbar-expand-lg .bg-transparent navbar-dark">
-                    
-                    <div class="container-fluid">
-                      
-                      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
-                      </button>
-                      <div class="collapse navbar-collapse" id="navbarNav">
-                        <ul class="navbar-nav">
-                          <li class="nav-item">
-                            <a class="nav-link"  href="../index.html">Inicio</a>
-                          </li>
-                          <li class="nav-item">
-                            <a class="nav-link"  href="./portfolio.html">Portfolio</a>
-                          </li>
-                          <li class="nav-item">
-                            <a class="nav-link" href="./sobremi.html">Sobre mi</a>
-                          </li>
-                          <li class="nav-item">
-                            <a class="nav-link" href="./servicios.html">Servicios</a>
-                          </li>
-                          <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="./contacto.html">Contacto</a>
-                          </li>
-                        </ul>
-                      </div>
-                    </div>
-                  </nav>
-            </header>
-        
-        <div class="hero__main">
+            <a class="navbar-brand" href="../index.html"><img src="../img/logos/ni logo dorado recorte.png" alt="Logo Nickweb"></a>
+            <nav class="d-flex justify-content-between navbar navbar-expand-lg .bg-transparent navbar-dark">
+                
+                <div class="container-fluid">
+                  
+                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                  </button>
+                  <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav">
+                      <li class="nav-item">
+                        <a class="nav-link" href="../index.html">Inicio</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="./portfolio.html">Portfolio</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link"  href="./sobremi.html">Sobre mi</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="./servicios.html">Servicios</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="./contacto.html">Contacto</a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </nav>
+        </header>
+      </div>
+      <div class="hero__main">
+        <div class="hero__contenedor">
             <div class="hero__text">
                 <h4>Resolve tus Dudas Ahora Mismo</h4>
-                <p><a href="#Contacto">Metodos de Contacto</a></p>
+                <div class="btn">
+                  <a href="#Contacto"><span>Contacto</span></a>
+              </div>
             </div>
             <div class="hero_img">
               <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
               <lottie-player src="https://assets2.lottiefiles.com/packages/lf20_isbiybfh.json" mode="bounce" background="transparent"  speed="1"  style="width: 100%; height: 90%;"  loop  autoplay></lottie-player>
             </div>
+          </div>
+          <div class="hero__svg" style="height: 150px; overflow: hidden;" ><svg viewBox="0 0 500 150" preserveAspectRatio="none" style="height: 100%; width: 100%;"><path d="M-4.79,97.22 C229.97,-71.52 310.66,205.77 516.08,41.95 L523.98,160.38 L0.00,150.00 Z" style="stroke: none; fill: rgb(255, 255, 255);"></path></svg></div>
         </div>
     </section>
    <section class="section__contacto">
@@ -80,7 +85,7 @@
         
         <div class="flex__contacto" id="Contacto">
             
-            <div class="contacto__formulario" >
+            <div class="contacto__formulario" data-aos="flip-up" data-aos-delay="700" >
                     <div class="formulario__flex">
                     <label for="Nombre">Completa con tu Nombre</label>
                     <input type="text" name="Nombre" placeholder="Nicolas">

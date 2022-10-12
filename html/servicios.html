@@ -16,6 +16,7 @@
 </head>
 <body>
     <section class="hero">
+      <div class="div__header">
         <header class="hero__header">
             <a class="navbar-brand" href="../index.html"><img src="../img/logos/ni logo dorado recorte.png" alt="Logo Nickweb"></a>
             <nav class="d-flex justify-content-between navbar navbar-expand-lg .bg-transparent navbar-dark">
@@ -34,7 +35,7 @@
                         <a class="nav-link" href="./portfolio.html">Portfolio</a>
                       </li>
                       <li class="nav-item">
-                        <a class="nav-link" href="./sobremi.html">Sobre mi</a>
+                        <a class="nav-link"  href="./sobremi.html">Sobre mi</a>
                       </li>
                       <li class="nav-item">
                         <a class="nav-link active" aria-current="page" href="./servicios.html">Servicios</a>
@@ -47,19 +48,25 @@
                 </div>
               </nav>
         </header>
-        <div class="hero__main">
+      </div>
+    <div class="hero__main">
+      <div class="hero__contenedor">
             <div class="hero__text">
                 <h4>Servicios que Ofresco</h4>
-                <p><a href="#Servicios">LO QUIERO</a></p>
+                <div class="btn">
+                  <a href="#Servicios"><span>Planes</span></a>
+              </div>
             </div>
             <div class="hero_img">
               <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
-              <lottie-player src="https://assets7.lottiefiles.com/packages/lf20_vmdlqsp1.json"   mode="bounce" background="transparent"  speed="1"  style="width: 100%; height: 90%;"  loop autoplay></lottie-player>
+              <lottie-player src="https://assets7.lottiefiles.com/packages/lf20_hk9b4dem.json"  background="transparent"  speed="1"  style="width: 100%; height: 100%;"  loop  autoplay></lottie-player>
             </div>
+          </div>
+          <div class="hero__svg" style="height: 150px; overflow: hidden;" ><svg viewBox="0 0 500 150" preserveAspectRatio="none" style="height: 100%; width: 100%;"><path d="M-4.79,97.22 C229.97,-71.52 310.66,205.77 516.08,41.95 L523.98,160.38 L0.00,150.00 Z" style="stroke: none; fill: rgb(255, 255, 255);"></path></svg></div>
         </div>
     </section>
-    <section class="flex__servicios" id="Servicios" >
-        <div class="div__servicio basico" >
+    <section class="flex__servicios" id="Servicios" data-aos="zoom-in" data-aos-delay="600" data-aos-duration="700" data-aos-offset="400" >
+        <div class="div__servicio basico"  >
           <div class="servicio__text">
          <h4>Web Sencilla</h4>
          <h5>$10000</h5>
@@ -74,7 +81,7 @@
           </ul>
           </div>
           </div>
-        <div class="div__servicio completo">
+        <div class="div__servicio completo" >
           <div class="servicio__text">
           <h4>Web Compleja</h4>
           <h5>$20000</h5>
@@ -89,7 +96,7 @@
              </ul>
         </div>
         </div>
-        <div class="div__servicio avanzado">
+        <div class="div__servicio avanzado" >
           <div class="servicio__text">
           <h4>Web Avanzada</h4>
           <h5>$30000</h5>

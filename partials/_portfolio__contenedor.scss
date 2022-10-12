@@ -1,0 +1,109 @@
+.portfolio__contenedor{
+    width: auto;
+    height: auto;
+    .contenedor__trabajos{
+        width: 95%;
+        height: 800px;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        margin: auto;
+        padding: 3rem;
+        gap: 3rem;
+       
+        .trabajo1{
+       height: 90%;
+       width: 90%;
+       position: relative;
+       overflow: hidden;
+       border-radius: 2rem;
+       box-shadow: 3px 3px 10px black;
+       transition: all;
+        transition-duration: 2s;
+        
+       &:hover{
+        transition: all;
+        transition-duration: 2s;
+        box-shadow: 3px 3px 20px black;
+        border: solid 2px white;
+        width: 100%;
+        height: 100%;
+        img{
+            transition: all;
+            transition-duration: 2s;
+            opacity: 1;
+        }
+       }
+       
+      
+         h4{
+                position: absolute;
+                transform: translate(-50%, 100%);
+                top: 50%;
+                left: 50%;
+                font-size: 4rem;
+                text-shadow: 2px 2px 5px rgb(255, 255, 255);
+                color: rgb(0, 0, 0);
+                text-align: center;
+                transition: all;
+              transition-duration: 2s;
+                
+          }
+         img{
+                width: 100%;
+                height: 100%;
+                opacity: 0.5;
+                transition: all;
+                transition-duration: 2s;
+                
+         }
+        }
+        .trabajo2{
+            height: 90%;
+            width: 90%;
+            position: relative;
+            overflow: hidden;
+            border-radius: 2rem;
+            box-shadow: 3px 3px 10px black;
+            transition: all;
+             transition-duration: 2s;
+             &:hover{
+                transition: all;
+                transition-duration: 2s;
+                box-shadow: 3px 3px 20px black;
+                border: solid 2px white;
+                width: 100%;
+                height: 100%;
+                img{
+                    transition: all;
+                    transition-duration: 2s;
+                    opacity: 1;
+                }
+   
+             }
+            
+              h4{
+                position: absolute;
+                transform: translate(-50%, 100%);
+                top: 50%;
+                left: 50%;
+                font-size: 4rem;
+                text-shadow: 2px 2px 5px rgb(255, 255, 255);
+                color: rgb(0, 0, 0);
+                text-align: center;
+                transition: all;
+                transition-duration: 2s;
+               }
+              img{
+                width: 100%;
+                height: 100%;
+                opacity: 0.5;
+                transition: all;
+                transition-duration: 2s;
+                
+                     
+              }
+             }
+    }
+}

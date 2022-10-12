@@ -21,6 +21,7 @@
         img{
             border-radius: 30px;
             width: 45%;
+            object-fit: contain;
         }
         .text{
             margin: auto;
@@ -28,6 +29,7 @@
             flex-direction: column;
             text-align: center;
             justify-content: center;
+            padding: 2rem;
 
             h5{
                 padding: 10px;
