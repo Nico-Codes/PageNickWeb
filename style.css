@@ -770,7 +770,7 @@ body {
   }
   body .footer .footer__item {
     display: flex;
-    flex-direction: column;
+    flex-direction: column-reverse;
     width: 100%;
     padding: 0;
     padding-top: 1rem;
@@ -778,6 +778,8 @@ body {
   }
   body .footer .footer__item .text, body .footer .footer__item .grid .grid__item .text__sobremi, .grid .grid__item body .footer .footer__item .text__sobremi {
     width: 30%;
+    padding-top: 0;
+    padding-bottom: 1.5rem;
   }
   body .footer .footer__item .text h4, body .footer .footer__item .grid .grid__item .text__sobremi h4, .grid .grid__item body .footer .footer__item .text__sobremi h4 {
     font-size: 0.9rem;
