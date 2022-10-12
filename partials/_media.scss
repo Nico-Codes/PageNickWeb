@@ -93,13 +93,20 @@ body{
             }
         }
         .sobre__mi{
+            width: 100%;
             margin: 0;
             padding: 0;
+            padding-top: 3rem;
+            padding-bottom: 3rem;
+            overflow-x: hidden;
             .contenedor__sm{
+                width: 90%;
                 display: flex;
                 flex-direction: column;
                 height: max-content;
                 padding: 0;
+                
+                
                 .sm__text{
                     width: 100%;
                 }
@@ -114,9 +121,13 @@ body{
             }
         }
         .portfolio__contenedor{
+            width: 100%;
+            
             .contenedor__trabajos{
+                width: 100%;
                 display: flex;
                 flex-direction: column;
+                overflow-x: hidden;
                 .trabajo1{
                     h4{
                         font-size: 2rem;
@@ -135,7 +146,7 @@ body{
         .grid{
             display: flex;
             flex-direction: column;
-            width: 90%;
+            width:100%;
             margin: auto;
             padding: 0;
             gap: 1rem;
@@ -147,8 +158,8 @@ body{
                 align-items: center;
                 gap: 0.1rem;
                 height: auto;
-                width: 100%;
-                margin: 0;
+                width: 90%;
+                margin: auto;
                 margin-bottom: 15px;
                 margin-top: 15px;
                 overflow: hidden;
